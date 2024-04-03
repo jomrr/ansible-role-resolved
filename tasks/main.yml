@@ -22,6 +22,7 @@
     section: "Resolve"
     option: "{{ item.key }}"
     value: "{{ item.value }}"
+    create: false
     state: present
     mode: '0644'
   loop: "{{ lookup('ansible.builtin.dict', resolved_config) }}"
