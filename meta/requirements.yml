@@ -2,6 +2,7 @@
 # name: jam82.resolved
 # file: meta/requirements.yml
 
-collections: []
+collections:
+  - community.general
 
 roles: []
