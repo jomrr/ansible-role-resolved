@@ -1,0 +1,12 @@
+---
+# role: jam82.ansible-role-resolved
+# file: vars/main.yml
+
+_resolved_packages:
+  Archlinux: ''
+  Debian: systemd-resolved
+  RedHat: systemd-resolved
+  Suse: systemd-network
+  Ubuntu: ''
+
+resolved_packages: "{{ _resolved_packages[ansible_distribution] | default(_resolved_packages[ansible_os_family]) }}"

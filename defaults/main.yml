@@ -1,0 +1,11 @@
+---
+# role: jam82.ansible-role-resolved
+# file: defaults/main.yml
+
+resolved_default_config:
+  Cache: 'yes'
+  DNSStubListener: 'no'
+  LLMNR: 'no'
+  ReadEtcHosts: 'yes'
+
+resolved_custom_config: {}

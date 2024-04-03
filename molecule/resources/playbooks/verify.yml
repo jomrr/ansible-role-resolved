@@ -4,9 +4,21 @@
 
 - name: "PLAYBOOK | Verify"
   hosts: all
-  gather_facts: false
+  become: false
+  gather_facts: true
   tasks:
-    - name: "Assert true"
-      ansible.builtin.assert:
-        that: "true"
-        fail_msg: "This should never fail"
+    - name: "Check if systemd-resolved is running"
+      ansible.builtin.systemd:
+        name: systemd-resolved
+        state: started
+      check_mode: true
+      register: result
+      failed_when: result is changed or result is failed
+
+    - name: "Check if systemd-resolved is enabled"
+      ansible.builtin.systemd:
+        name: systemd-resolved
+        enabled: true
+      check_mode: true
+      register: result
+      failed_when: result is changed or result is failed

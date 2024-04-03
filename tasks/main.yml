@@ -1,0 +1,34 @@
+---
+# role: jam82.ansible-role-resolved
+# file: tasks/main.yml
+
+- name: "Assert that systemd is installed and running"
+  ansible.builtin.assert:
+    that: "ansible_service_mgr == 'systemd'"
+
+- name: "Install systemd-resolved"
+  ansible.builtin.package:
+    name: "{{ resolved_packages }}"
+    state: present
+  when: resolved_packages | length > 0
+
+- name: "Merge default and custom configurations"
+  ansible.builtin.set_fact:
+    resolved_config: "{{ resolved_default_config | combine(resolved_custom_config) }}"
+
+- name: "Configure systemd-resolved"
+  community.general.ini_file:
+    path: /etc/systemd/resolved.conf
+    section: "Resolve"
+    option: "{{ item.key }}"
+    value: "{{ item.value }}"
+    state: present
+    mode: '0644'
+  loop: "{{ lookup('ansible.builtin.dict', resolved_config) }}"
+  notify: "Restart systemd-resolved"
+
+- name: "Enable and start systemd-resolved"
+  ansible.builtin.systemd:
+    name: systemd-resolved
+    enabled: true
+    state: started
