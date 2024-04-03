@@ -6,7 +6,8 @@
 
 ## Description
 
-This Ansible role installs and configures resolved on supported platforms.
+This role installs and configures systemd-resolved on the targeted host(s).
+
 
 ## Prerequisites
 
