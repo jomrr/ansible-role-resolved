@@ -5,7 +5,7 @@
 - name: "PLAYBOOK | Verify"
   hosts: all
   become: false
-  gather_facts: true
+  gather_facts: false
   tasks:
     - name: "Check if systemd-resolved is running"
       ansible.builtin.systemd:

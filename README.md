@@ -37,7 +37,7 @@ roles: []
 | Archlinux | Archlinux | latest | [jam82/molecule-archlinux:latest]( https://hub.docker.com/r/jam82/molecule-archlinux ) |
 | Debian | Debian | latest | [jam82/molecule-debian:latest]( https://hub.docker.com/r/jam82/molecule-debian ) |
 | RedHat | Fedora | latest | [jam82/molecule-fedora:latest]( https://hub.docker.com/r/jam82/molecule-fedora ) |
-| Suse | OpenSuse Leap | latest | [jam82/molecule-opensuse leap:latest]( https://hub.docker.com/r/jam82/molecule-opensuse leap ) |
+| Suse | openSUSE Leap | latest | [jam82/molecule-opensuse-leap:latest]( https://hub.docker.com/r/jam82/molecule-opensuse-leap ) |
 | Debian | Ubuntu | latest | [jam82/molecule-ubuntu:latest]( https://hub.docker.com/r/jam82/molecule-ubuntu ) |
 
 ## Role Variables

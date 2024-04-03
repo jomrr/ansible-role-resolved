@@ -50,7 +50,7 @@ platforms:
     command: null
     systemd: true
   - name: opensuse-leap-latest-resolved
-    image: "docker.io/jam82/molecule-opensuse leap:latest"
+    image: "docker.io/jam82/molecule-opensuse-leap:latest"
     pre_build_image: true
     entrypoint: null
     command: null
