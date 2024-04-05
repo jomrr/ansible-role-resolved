@@ -1,5 +1,5 @@
 ---
-# name: jam82.ansible-role-resolved
+# name: jomrr.ansible-role-resolved
 # file: molecule/all/molecule.yml
 
 scenario:
@@ -26,37 +26,37 @@ verifier:
   name: ansible
 platforms:
   - name: almalinux-latest-resolved
-    image: "docker.io/jam82/molecule-almalinux:latest"
+    image: "docker.io/jomrr/molecule-almalinux:latest"
     pre_build_image: true
     entrypoint: null
     command: null
     systemd: true
   - name: archlinux-latest-resolved
-    image: "docker.io/jam82/molecule-archlinux:latest"
+    image: "docker.io/jomrr/molecule-archlinux:latest"
     pre_build_image: true
     entrypoint: null
     command: null
     systemd: true
   - name: debian-latest-resolved
-    image: "docker.io/jam82/molecule-debian:latest"
+    image: "docker.io/jomrr/molecule-debian:latest"
     pre_build_image: true
     entrypoint: null
     command: null
     systemd: true
   - name: fedora-latest-resolved
-    image: "docker.io/jam82/molecule-fedora:latest"
+    image: "docker.io/jomrr/molecule-fedora:latest"
     pre_build_image: true
     entrypoint: null
     command: null
     systemd: true
   - name: opensuse-leap-latest-resolved
-    image: "docker.io/jam82/molecule-opensuse-leap:latest"
+    image: "docker.io/jomrr/molecule-opensuse-leap:latest"
     pre_build_image: true
     entrypoint: null
     command: null
     systemd: true
   - name: ubuntu-latest-resolved
-    image: "docker.io/jam82/molecule-ubuntu:latest"
+    image: "docker.io/jomrr/molecule-ubuntu:latest"
     pre_build_image: true
     entrypoint: null
     command: null

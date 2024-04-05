@@ -1,6 +1,6 @@
 # Ansible role resolved
 
-![GitHub](https://img.shields.io/github/license/jam82/ansible-role-resolved) ![GitHub last commit](https://img.shields.io/github/last-commit/jam82/ansible-role-resolved) ![GitHub issues](https://img.shields.io/github/issues-raw/jam82/ansible-role-resolved)
+![GitHub](https://img.shields.io/github/license/jomrr/ansible-role-resolved) ![GitHub last commit](https://img.shields.io/github/last-commit/jomrr/ansible-role-resolved) ![GitHub issues](https://img.shields.io/github/issues-raw/jomrr/ansible-role-resolved)
 
 **Ansible role for setting up systemd-resolved.**
 
@@ -34,12 +34,12 @@ roles: []
 
 | OS Family | Distribution | Version | Container Image |
 |-----------|--------------|---------|-----------------|
-| RedHat | AlmaLinux | latest | [jam82/molecule-almalinux:latest]( https://hub.docker.com/r/jam82/molecule-almalinux ) |
-| Archlinux | Archlinux | latest | [jam82/molecule-archlinux:latest]( https://hub.docker.com/r/jam82/molecule-archlinux ) |
-| Debian | Debian | latest | [jam82/molecule-debian:latest]( https://hub.docker.com/r/jam82/molecule-debian ) |
-| RedHat | Fedora | latest | [jam82/molecule-fedora:latest]( https://hub.docker.com/r/jam82/molecule-fedora ) |
-| Suse | openSUSE Leap | latest | [jam82/molecule-opensuse-leap:latest]( https://hub.docker.com/r/jam82/molecule-opensuse-leap ) |
-| Debian | Ubuntu | latest | [jam82/molecule-ubuntu:latest]( https://hub.docker.com/r/jam82/molecule-ubuntu ) |
+| RedHat | AlmaLinux | latest | [jomrr/molecule-almalinux:latest]( https://hub.docker.com/r/jomrr/molecule-almalinux ) |
+| Archlinux | Archlinux | latest | [jomrr/molecule-archlinux:latest]( https://hub.docker.com/r/jomrr/molecule-archlinux ) |
+| Debian | Debian | latest | [jomrr/molecule-debian:latest]( https://hub.docker.com/r/jomrr/molecule-debian ) |
+| RedHat | Fedora | latest | [jomrr/molecule-fedora:latest]( https://hub.docker.com/r/jomrr/molecule-fedora ) |
+| Suse | openSUSE Leap | latest | [jomrr/molecule-opensuse-leap:latest]( https://hub.docker.com/r/jomrr/molecule-opensuse-leap ) |
+| Debian | Ubuntu | latest | [jomrr/molecule-ubuntu:latest]( https://hub.docker.com/r/jomrr/molecule-ubuntu ) |
 
 ## Role Variables
 
@@ -51,22 +51,22 @@ Example playbooks(s) that show how to use this role.
 
 ## Simple example playbook
 
-A simple default example playbook for using jam82.resolved.
+A simple default example playbook for using jomrr.resolved.
 ```yaml
 ---
-# name: "jam82.resolved"
+# name: "jomrr.resolved"
 # file: "playbook_resolved.yml"
 
 - name: "PLAYBOOK | resolved"
   hosts: "resolved_hosts"
   gather_facts: true
   roles:
-    - role: "jam82.resolved"
+    - role: "jomrr.resolved"
 ```
 
 ## Author(s) and License
 
-- :octocat:                 Author::    [jam82](https://github.com/jam82)
+- :octocat:                 Author::    [jomrr](https://github.com/jomrr)
 - :triangular_flag_on_post: Copyright:: 2024, Jonas Mauer
 - :page_with_curl:          License::   [MIT](LICENSE)
 
