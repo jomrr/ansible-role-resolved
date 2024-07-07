@@ -2,6 +2,8 @@
 # role: jomrr.ansible-role-resolved
 # file: defaults/main.yml
 
+# default and custom config are merged
+# so not every key needs to be defined in the custom config
 resolved_default_config:
   Cache: 'yes'
   DNSStubListener: 'no'
